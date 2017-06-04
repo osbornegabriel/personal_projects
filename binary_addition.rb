@@ -4,7 +4,7 @@
 
     The binary number returned should be a string.
 
-  Below was my original solution, after that is my much drier solution, using the .to_i and .to_s(2) methods.
+  Below was my original solution, after that is my much drier solution, using the .to_s(2) method.
 =end
 
 #Draft 1:
@@ -32,6 +32,5 @@
 
 #Final Version:
 def add_binary(a,b)
-  sum = (a+b).to_i
-  sum.to_s(2)
+  sum = (a+b).to_s(2)
 end
