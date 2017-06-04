@@ -15,8 +15,6 @@ def add_binary(a,b)
     if !binary_number.include?('0')
       binary_number.gsub!('1', '0')
       binary_number.prepend('1')
-    elsif binary_number[-1] == '0'
-      binary_number[-1] = '1'
     else
       change_index = binary_number.rindex('0')
       binary_number[change_index] = '1'
@@ -27,5 +25,6 @@ def add_binary(a,b)
       end
     end
   end
+
   binary_number
 end
